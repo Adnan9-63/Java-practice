@@ -57,5 +57,12 @@ public class basic3 {
         double m = sc.nextDouble(); // for double input, sc.nextDouble() will take input of double type
         System.out.println("You entered: " + m);
 
+
+        //Area of a circle
+        System.out.print("Enter the radius of the circle: ");
+        float radius = sc.nextFloat();
+        float area = (float) (3.14 * radius * radius);
+        System.out.println("Area of the circle is: " + area);
+
     }
 }

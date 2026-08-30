@@ -59,7 +59,22 @@ public class looops {
 
         }
         System.out.println("the reversed number is :"+reversed_num);
-       
+
+        //checking the number is prime or not using for loop
+        System.out.print("Enter a number to check if it is prime or not: ");
+        int number = sc.nextInt();
+        boolean isPrime = true;
+        for(int n=2;n<=number/2;n++){
+            if(number%n==0){
+                isPrime=false;
+                break;
+            }
+        }
+        if(isPrime){
+            System.out.println(number+" is a prime number.");
+        }else{
+            System.out.println(number+" is not a prime number.");
+        }
 
     }
 }
